@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAP4.Biblioteca.Dominio", "DAP4.Biblioteca.Dominio\DAP4.Biblioteca.Dominio.csproj", "{012711AD-E74F-4245-88BB-3CB44F7031B7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Layer", "Service Layer", "{8C4076CD-89AD-43F3-ADC9-31BA66B5892F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain Layer", "Domain Layer", "{6F0030C8-F484-439B-BBBA-347ED6280D46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure Layer", "Infrastructure Layer", "{2F5BFB95-7E5C-441D-9455-611B3742CBB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +24,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{012711AD-E74F-4245-88BB-3CB44F7031B7} = {6F0030C8-F484-439B-BBBA-347ED6280D46}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8E58B050-7F0A-49DE-962A-6D1C42A96FC8}

@@ -1,0 +1,6 @@
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\bin\Debug\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\bin\Debug\DAP4.Biblioteca.Dominio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\obj\Debug\DAP4.Biblioteca.Dominio.csprojAssemblyReference.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\obj\Debug\DAP4.Biblioteca.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\obj\Debug\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Dominio\obj\Debug\DAP4.Biblioteca.Dominio.pdb
