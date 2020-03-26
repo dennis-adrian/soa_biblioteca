@@ -1,0 +1,11 @@
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Implementacion.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Implementacion.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Contrato.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Contrato.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\bin\Debug\DAP4.Biblioteca.Dominio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\obj\Debug\DAP4.Biblioteca.Implementacion.csprojAssemblyReference.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\obj\Debug\DAP4.Biblioteca.Implementacion.csproj.CoreCompileInputs.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\obj\Debug\DAP4.Biblioteca.Implementacion.csproj.CopyComplete
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\obj\Debug\DAP4.Biblioteca.Implementacion.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.Implementacion\obj\Debug\DAP4.Biblioteca.Implementacion.pdb

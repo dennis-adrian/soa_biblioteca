@@ -1,0 +1,14 @@
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.WcfService.dll.config
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.WcfService.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.WcfService.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\obj\Debug\DAP4.Biblioteca.WcfService.csprojAssemblyReference.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\obj\Debug\DAP4.Biblioteca.WcfService.csproj.CoreCompileInputs.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\obj\Debug\DAP4.Biblioteca.WcfService.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\obj\Debug\DAP4.Biblioteca.WcfService.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Contrato.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Implementacion.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Contrato.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Implementacion.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\bin\DAP4.Biblioteca.Dominio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.WcfService\obj\Debug\DAP4.Biblioteca.WcfService.csproj.CopyComplete
