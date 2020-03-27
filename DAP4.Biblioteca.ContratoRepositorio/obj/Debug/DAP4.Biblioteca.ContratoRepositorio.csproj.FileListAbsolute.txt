@@ -1,0 +1,9 @@
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\bin\Debug\DAP4.Biblioteca.ContratoRepositorio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\bin\Debug\DAP4.Biblioteca.ContratoRepositorio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\bin\Debug\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\bin\Debug\DAP4.Biblioteca.Dominio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\obj\Debug\DAP4.Biblioteca.ContratoRepositorio.csprojAssemblyReference.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\obj\Debug\DAP4.Biblioteca.ContratoRepositorio.csproj.CoreCompileInputs.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\obj\Debug\DAP4.Biblioteca.ContratoRepositorio.csproj.CopyComplete
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\obj\Debug\DAP4.Biblioteca.ContratoRepositorio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.ContratoRepositorio\obj\Debug\DAP4.Biblioteca.ContratoRepositorio.pdb

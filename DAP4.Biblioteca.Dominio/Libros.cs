@@ -19,8 +19,8 @@ namespace DAP4.Biblioteca.Dominio
         [DataMember]
         public int libro_anio_publicacion { get; set; }
         [DataMember]
-        public int id_autor { get; set; }
+        public string autor_nombre { get; set; }
         [DataMember]
-        public int id_genero { get; set; }
+        public string genero_nombre { get; set; }
     }
 }

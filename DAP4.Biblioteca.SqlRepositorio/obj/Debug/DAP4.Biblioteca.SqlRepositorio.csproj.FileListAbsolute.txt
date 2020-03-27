@@ -1,0 +1,13 @@
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.SqlRepositorio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.SqlRepositorio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.ContratoRepositorio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.Dominio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\Dapper.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.ContratoRepositorio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\DAP4.Biblioteca.Dominio.pdb
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\bin\Debug\Dapper.xml
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\obj\Debug\DAP4.Biblioteca.SqlRepositorio.csprojAssemblyReference.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\obj\Debug\DAP4.Biblioteca.SqlRepositorio.csproj.CoreCompileInputs.cache
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\obj\Debug\DAP4.Biblioteca.SqlRepositorio.csproj.CopyComplete
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\obj\Debug\DAP4.Biblioteca.SqlRepositorio.dll
+C:\Users\dagb\OneDrive\UTEPSA\dap4\proyecto_dap4_biblioteca\DAP4.Biblioteca.SqlRepositorio\obj\Debug\DAP4.Biblioteca.SqlRepositorio.pdb

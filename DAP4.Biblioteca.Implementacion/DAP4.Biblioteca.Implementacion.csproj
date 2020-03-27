@@ -53,6 +53,10 @@
       <Project>{012711ad-e74f-4245-88bb-3cb44f7031b7}</Project>
       <Name>DAP4.Biblioteca.Dominio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DAP4.Biblioteca.Fachada\DAP4.Biblioteca.Fachada.csproj">
+      <Project>{dd6fea20-a459-41c6-b547-88ad6dc003ef}</Project>
+      <Name>DAP4.Biblioteca.Fachada</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

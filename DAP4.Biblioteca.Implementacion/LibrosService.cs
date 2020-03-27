@@ -6,24 +6,34 @@ using System.Threading.Tasks;
 
 using DAP4.Biblioteca.Contrato;
 using DAP4.Biblioteca.Dominio;
+using DAP4.Biblioteca.Fachada;
 
 namespace DAP4.Biblioteca.Implementacion
 {
     public class LibrosService : ILibrosService
     {
-        public IEnumerable<Libros> ListarLibros()
+        IEnumerable<Libros> ILibrosService.ListarLibros()
         {
-            return null;
+            using (var instancia = new LibrosFachada())
+            {
+                return instancia.ListarLibros();
+            }
         }
 
-        public Libros ObtenerLibroPorId(int id_libro)
+        Libros ILibrosService.ObtenerLibroPorId(int id_libro)
         {
-            return null;
+            using (var instancia = new LibrosFachada())
+            {
+                return instancia.ObtenerLibroPorId(id_libro);
+            }
         }
 
-        public Libros ObtenerLibroPorNombre(string libro_nombre)
+        Libros ILibrosService.ObtenerLibroPorNombre(string libro_nombre)
         {
-            return null;
+            using (var instancia = new LibrosFachada())
+            {
+                return instancia.ObtenerLibroPorNombre(libro_nombre);
+            }
         }
     }
 }
