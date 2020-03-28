@@ -12,6 +12,14 @@ namespace DAP4.Biblioteca.Implementacion
 {
     public class LibrosService : ILibrosService
     {
+        public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
+        {
+            using (var instancia = new LibrosFachada())
+            {
+                instancia.InsertarLibro(libro_nombre, libro_isbn, anio_publicacion, id_autor, id_genero);
+            }
+        }
+
         IEnumerable<Libros> ILibrosService.ListarLibros()
         {
             using (var instancia = new LibrosFachada())

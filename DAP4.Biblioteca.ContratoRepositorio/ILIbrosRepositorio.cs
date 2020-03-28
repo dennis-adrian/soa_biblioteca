@@ -13,5 +13,6 @@ namespace DAP4.Biblioteca.ContratoRepositorio
         Libros ObtenerLibroPorId(int id_libro);
         Libros ObtenerLibroPorNombre(string libro_nombre);
         IEnumerable<Libros> ListarLibros();
+        void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion,int id_autor, int id_genero);
     }
 }
