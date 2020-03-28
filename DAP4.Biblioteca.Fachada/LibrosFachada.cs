@@ -38,5 +38,15 @@ namespace DAP4.Biblioteca.Fachada
             ILibrosRepositorio instancia = new LibrosRepositorio();
             instancia.InsertarLibro(libro_nombre, libro_isbn, anio_publicacion, id_autor, id_genero);
         }
+        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
+        {
+            ILibrosRepositorio instancia = new LibrosRepositorio();
+            return instancia.ActualizarLibro(id_libro, libro_nombre, libro_isbn, anio_publicacion, id_autor, id_genero);
+        }
+        public Libros EliminarLibro(int id_libro)
+        {
+            ILibrosRepositorio instancia = new LibrosRepositorio();
+            return instancia.EliminarLibro(id_libro);
+        }
     }
 }

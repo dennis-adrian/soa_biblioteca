@@ -13,14 +13,71 @@ namespace DAP4.Biblioteca.SqlRepositorio
 {
     public class LibrosRepositorio: ILibrosRepositorio
     {
+        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
+        {
+            using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
+            {
+                conexion.Open();
+                
+                try
+                {
+                    var parametro = new DynamicParameters();
+                    //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
+                    parametro.Add("@pIdLibro", id_libro);
+                    parametro.Add("@pNombreLibro", libro_nombre);
+                    parametro.Add("@pIsbnLibro", libro_isbn);
+                    parametro.Add("@pPublicacion", anio_publicacion);
+                    parametro.Add("@pIdAutor", id_autor);
+                    parametro.Add("@pIdGenero", id_genero);
+
+                    //aqui entra en ejecucion el ORM
+                    var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_actualizar", param: parametro, commandType: CommandType.StoredProcedure);
+
+                    return libro;
+                }
+                catch (Exception)
+                {
+                    throw;
+                }
+            }
+        }
+
+        public Libros EliminarLibro(int id_libro)
+        {
+            using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
+            {
+                conexion.Open();
+
+                try
+                {
+                    var parametro = new DynamicParameters();
+
+                    //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
+                    parametro.Add("@pIdLibro", id_libro);
+
+                    //aqui entra en ejecucion el ORM
+                    var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_eliminar", param: parametro, commandType: CommandType.StoredProcedure);
+
+                    return libro;
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+        }
+
         public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
                 conexion.Open();
-                var parametro = new DynamicParameters();
+
                 try
                 {
+                    var parametro = new DynamicParameters();
+
                     //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
                     parametro.Add("@pNombreLibro", libro_nombre);
                     parametro.Add("@pIsbnLibro", libro_isbn);
@@ -55,10 +112,10 @@ namespace DAP4.Biblioteca.SqlRepositorio
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
+                conexion.Open();
+
                 try
                 {
-                    conexion.Open();
-
                     //aqui entra en ejecucion el ORM
                     var libros = conexion.Query<Libros>("dbo.sp_libros_listar", commandType: CommandType.StoredProcedure);
 
@@ -76,9 +133,10 @@ namespace DAP4.Biblioteca.SqlRepositorio
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
+                conexion.Open();
+
                 try
                 {
-                    conexion.Open();
                     var parametro = new DynamicParameters();
 
                     //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
@@ -101,13 +159,14 @@ namespace DAP4.Biblioteca.SqlRepositorio
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
+                conexion.Open();
+
                 try
                 {
-                    conexion.Open();
                     var parametro = new DynamicParameters();
 
                     //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
-                    parametro.Add("@@pNombreLibro", libro_nombre);
+                    parametro.Add("@pNombreLibro", libro_nombre);
 
                     //aqui entra en ejecucion el ORM
                     var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_obtener_por_nombre", param: parametro, commandType: CommandType.StoredProcedure);

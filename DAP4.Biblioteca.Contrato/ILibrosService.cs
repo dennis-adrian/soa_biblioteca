@@ -22,5 +22,9 @@ namespace DAP4.Biblioteca.Contrato
         IEnumerable<Libros> ListarLibros();
         [OperationContract]
         void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero);
+        [OperationContract]
+        Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero);
+        [OperationContract]
+        Libros EliminarLibro(int id_libro);
     }
 }
