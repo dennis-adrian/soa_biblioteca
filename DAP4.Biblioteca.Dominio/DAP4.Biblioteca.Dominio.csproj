@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Autores.cs" />
+    <Compile Include="Clientes.cs" />
     <Compile Include="Generos.cs" />
     <Compile Include="Libros.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,7 +10,7 @@ using DAP4.Biblioteca.SqlRepositorio;
 
 namespace DAP4.Biblioteca.Fachada
 {
-    public class LibrosFachada: IDisposable
+    public class LibrosFachada : IDisposable
     {
         public void Dispose()
         {

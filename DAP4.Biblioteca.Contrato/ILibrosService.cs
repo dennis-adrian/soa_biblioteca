@@ -17,7 +17,7 @@ namespace DAP4.Biblioteca.Contrato
         [OperationContract]
         Libros ObtenerLibroPorNombre(string libro_nombre);
 
-        //crear u método que nos devuelva una lista con todos los proveedores
+        //crear un método que nos devuelva una lista con todos los proveedores
         [OperationContract]
         IEnumerable<Libros> ListarLibros();
         [OperationContract]
