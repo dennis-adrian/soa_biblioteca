@@ -13,7 +13,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
 {
     public class LibrosRepositorio: ILibrosRepositorio
     {
-        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
+        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -27,8 +27,8 @@ namespace DAP4.Biblioteca.SqlRepositorio
                     parametro.Add("@pNombreLibro", libro_nombre);
                     parametro.Add("@pIsbnLibro", libro_isbn);
                     parametro.Add("@pPublicacion", anio_publicacion);
-                    parametro.Add("@pIdAutor", id_autor);
-                    parametro.Add("@pIdGenero", id_genero);
+                    parametro.Add("@pNombreAutor", autor_nombre);
+                    parametro.Add("@pNombreGenero", genero_nombre);
 
                     //aqui entra en ejecucion el ORM
                     var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_actualizar", param: parametro, commandType: CommandType.StoredProcedure);
@@ -68,7 +68,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, int id_autor, int id_genero)
+        public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -82,8 +82,8 @@ namespace DAP4.Biblioteca.SqlRepositorio
                     parametro.Add("@pNombreLibro", libro_nombre);
                     parametro.Add("@pIsbnLibro", libro_isbn);
                     parametro.Add("@pPublicacion", anio_publicacion);
-                    parametro.Add("@pIdAutor", id_autor);
-                    parametro.Add("@pIdGenero", id_genero);
+                    parametro.Add("@pNombreAutor", autor_nombre);
+                    parametro.Add("@pNombreGenero", genero_nombre);
 
                     //aqui entra en ejecucion el ORM
                     conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_insertar", param: parametro, commandType: CommandType.StoredProcedure);
