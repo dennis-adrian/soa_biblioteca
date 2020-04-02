@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ILibrosRepositorio.cs" />
     <Compile Include="IClientesRepositorio.cs" />
+    <Compile Include="IPrestamosRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

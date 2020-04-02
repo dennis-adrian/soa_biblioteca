@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="ClientesFachada.cs" />
     <Compile Include="LibrosFachada.cs" />
+    <Compile Include="PrestamosFachada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
