@@ -17,7 +17,7 @@ namespace DAP4.Biblioteca.Contrato
     {
         [OperationContract]
         [Description("Servicio REST que muestra el prestamo segun el codigo")]
-        [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/ObtenerPrestamoPorCodigo/{codigo_prestamo}", BodyStyle = WebMessageBodyStyle.Bare)]
+        [WebGet(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, UriTemplate = "/ObtenerPrestamoPorCodigo/?codigo={codigo_prestamo}", BodyStyle = WebMessageBodyStyle.Bare)]
         Prestamos ObtenerPrestamoPorCodigo(string codigo_prestamo);
 
 
@@ -40,7 +40,8 @@ namespace DAP4.Biblioteca.Contrato
 
 
         [OperationContract]
-        [WebInvoke(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "PUT", UriTemplate = "/DevolverPrestamo", BodyStyle = WebMessageBodyStyle.Bare)]
+        [Description("Servicio REST que modifica el estado de un prestamo a devuelto")]
+        [WebInvoke(RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json, Method = "PUT", UriTemplate = "/DevolverPrestamo/?id={id_prestamo}", BodyStyle = WebMessageBodyStyle.Bare)]
         bool DevolverPrestamo(string id_prestamo);
     }
 }
