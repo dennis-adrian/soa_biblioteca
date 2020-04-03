@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientesService.svc" />
+    <Content Include="EmpleadosService.svc" />
     <Content Include="LibrosService.svc" />
     <Content Include="PrestamosService.svc" />
     <Content Include="Web.config" />
