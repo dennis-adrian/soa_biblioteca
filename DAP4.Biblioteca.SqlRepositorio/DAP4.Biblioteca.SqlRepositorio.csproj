@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClientesRepositorio.cs" />
+    <Compile Include="EmpleadosRepositorio.cs" />
     <Compile Include="LibrosRepositorio.cs" />
     <Compile Include="ConexionRepositorio.cs" />
     <Compile Include="PrestamosRepositorio.cs" />
