@@ -13,7 +13,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
 {
     public class LibrosRepositorio: ILibrosRepositorio
     {
-        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
+        public Libros ActualizarLibro(Libros libro)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -23,17 +23,17 @@ namespace DAP4.Biblioteca.SqlRepositorio
                 {
                     var parametro = new DynamicParameters();
                     //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
-                    parametro.Add("@pIdLibro", id_libro);
-                    parametro.Add("@pNombreLibro", libro_nombre);
-                    parametro.Add("@pIsbnLibro", libro_isbn);
-                    parametro.Add("@pPublicacion", anio_publicacion);
-                    parametro.Add("@pNombreAutor", autor_nombre);
-                    parametro.Add("@pNombreGenero", genero_nombre);
+                    parametro.Add("@pIdLibro", libro.id_libro);
+                    parametro.Add("@pNombreLibro", libro.libro_nombre);
+                    parametro.Add("@pIsbnLibro", libro.libro_isbn);
+                    parametro.Add("@pPublicacion", libro.libro_anio_publicacion);
+                    parametro.Add("@pNombreAutor", libro.autor_nombre);
+                    parametro.Add("@pNombreGenero", libro.genero_nombre);
 
                     //aqui entra en ejecucion el ORM
-                    var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_actualizar", param: parametro, commandType: CommandType.StoredProcedure);
+                    var resultado = conexion.Execute("dbo.sp_libros_actualizar", param: parametro, commandType: CommandType.StoredProcedure);
 
-                    return libro;
+                    return resultado > 0 ? libro : new Libros();
                 }
                 catch (Exception)
                 {
@@ -42,7 +42,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public Libros EliminarLibro(int id_libro)
+        public bool EliminarLibro(string id_libro)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -56,9 +56,9 @@ namespace DAP4.Biblioteca.SqlRepositorio
                     parametro.Add("@pIdLibro", id_libro);
 
                     //aqui entra en ejecucion el ORM
-                    var libro = conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_eliminar", param: parametro, commandType: CommandType.StoredProcedure);
+                    var resultado = conexion.Execute("dbo.sp_libros_eliminar", param: parametro, commandType: CommandType.StoredProcedure);
 
-                    return libro;
+                    return resultado > 0;
                 }
                 catch (Exception)
                 {
@@ -68,7 +68,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
+        public Libros InsertarLibro(Libros libro)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -79,32 +79,26 @@ namespace DAP4.Biblioteca.SqlRepositorio
                     var parametro = new DynamicParameters();
 
                     //"pIdSupplier" corresponde al nombre que tiene el id en nuestro sp de la BD, "id" es el dato que pasaremos en este metodo 
-                    parametro.Add("@pNombreLibro", libro_nombre);
-                    parametro.Add("@pIsbnLibro", libro_isbn);
-                    parametro.Add("@pPublicacion", anio_publicacion);
-                    parametro.Add("@pNombreAutor", autor_nombre);
-                    parametro.Add("@pNombreGenero", genero_nombre);
+                    parametro.Add("@pNombreLibro", libro.libro_nombre);
+                    parametro.Add("@pIsbnLibro", libro.libro_isbn);
+                    parametro.Add("@pPublicacion", libro.libro_anio_publicacion);
+                    parametro.Add("@pNombreAutor", libro.autor_nombre);
+                    parametro.Add("@pNombreGenero", libro.genero_nombre);
+                    parametro.Add("@pIdLibro", libro.id_libro, DbType.Int32, ParameterDirection.Output);
 
                     //aqui entra en ejecucion el ORM
-                    conexion.QuerySingleOrDefault<Libros>("dbo.sp_libros_insertar", param: parametro, commandType: CommandType.StoredProcedure);
+                    var resultado = conexion.ExecuteScalar("dbo.sp_libros_insertar", param: parametro, commandType: CommandType.StoredProcedure);
+
+                    var LibroId = parametro.Get<Int32>("@pIdLibro");
+
+                    libro.id_libro = LibroId;
+
+                    return libro;
                 }
                 catch (Exception)
                 {
                     throw;
                 }
-
-                //string insertQuery = @"INSERT INTO [dbo].[Libros]([libro_nombre], [libro_isbn], [libro_anio_publicacion], [id_autor], [id_genero]) VALUES (@libro_nombre, @libro_isbn, @anio_publicacion, @id_autor, @id_genero)";
-
-                //var result = conexion.Execute(insertQuery, new
-                //{
-                //    tarea,
-                //    id_libro,
-                //    libro_nombre,
-                //    libro_isbn,
-                //    anio_publicacion,
-                //    id_autor,
-                //    id_genero
-                //});
             }
         }
 
@@ -129,7 +123,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public Libros ObtenerLibroPorId(int id_libro)
+        public Libros ObtenerLibroPorId(string id_libro)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {

@@ -22,7 +22,7 @@ namespace DAP4.Biblioteca.Fachada
             return instancia.ListarLibros();
         }
 
-        public Libros ObtenerLibroPorId(int id_libro)
+        public Libros ObtenerLibroPorId(string id_libro)
         {
             ILibrosRepositorio instancia = new LibrosRepositorio();
             return instancia.ObtenerLibroPorId(id_libro);
@@ -33,17 +33,17 @@ namespace DAP4.Biblioteca.Fachada
             ILibrosRepositorio instancia = new LibrosRepositorio();
             return instancia.ObtenerLibroPorNombre(libro_nombre);
         }
-        public void InsertarLibro(string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
+        public Libros InsertarLibro(Libros libro)
         {
             ILibrosRepositorio instancia = new LibrosRepositorio();
-            instancia.InsertarLibro(libro_nombre, libro_isbn, anio_publicacion, autor_nombre, genero_nombre);
+            return instancia.InsertarLibro(libro);
         }
-        public Libros ActualizarLibro(int id_libro, string libro_nombre, string libro_isbn, int anio_publicacion, string autor_nombre, string genero_nombre)
+        public Libros ActualizarLibro(Libros libro)
         {
             ILibrosRepositorio instancia = new LibrosRepositorio();
-            return instancia.ActualizarLibro(id_libro, libro_nombre, libro_isbn, anio_publicacion, autor_nombre, genero_nombre);
+            return instancia.ActualizarLibro(libro);
         }
-        public Libros EliminarLibro(int id_libro)
+        public bool EliminarLibro(string id_libro)
         {
             ILibrosRepositorio instancia = new LibrosRepositorio();
             return instancia.EliminarLibro(id_libro);
