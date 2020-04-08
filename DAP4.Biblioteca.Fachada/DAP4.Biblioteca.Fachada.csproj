@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoresFachada.cs" />
     <Compile Include="ClientesFachada.cs" />
     <Compile Include="EmpleadosFachada.cs" />
+    <Compile Include="GenerosFachada.cs" />
     <Compile Include="LibrosFachada.cs" />
     <Compile Include="PrestamosFachada.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

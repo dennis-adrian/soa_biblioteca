@@ -22,7 +22,7 @@ namespace DAP4.Biblioteca.Fachada
             return instancia.ActualizarCliente(cliente);
         }
 
-        public bool EliminarCliente(int id_cliente)
+        public bool EliminarCliente(string id_cliente)
         {
             IClientesRepositorio instancia = new ClientesRepositorio();
             return instancia.EliminarCliente(id_cliente);
@@ -46,7 +46,7 @@ namespace DAP4.Biblioteca.Fachada
             return instancia.ObtenerClientePorApellido(cliente_apellido);
         }
 
-        public Clientes ObtenerClientePorId(int id_cliente)
+        public Clientes ObtenerClientePorId(string id_cliente)
         {
             IClientesRepositorio instancia = new ClientesRepositorio();
             return instancia.ObtenerClientePorId(id_cliente);

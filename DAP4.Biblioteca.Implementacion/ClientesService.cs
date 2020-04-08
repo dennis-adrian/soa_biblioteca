@@ -20,7 +20,7 @@ namespace DAP4.Biblioteca.Implementacion
             }
         }
 
-        public bool EliminarCliente(int id_cliente)
+        public bool EliminarCliente(string id_cliente)
         {
             using (var instancia = new ClientesFachada())
             {
@@ -52,7 +52,7 @@ namespace DAP4.Biblioteca.Implementacion
             }
         }
 
-        public Clientes ObtenerClientePorId(int id_cliente)
+        public Clientes ObtenerClientePorId(string id_cliente)
         {
             using (var instancia = new ClientesFachada())
             {

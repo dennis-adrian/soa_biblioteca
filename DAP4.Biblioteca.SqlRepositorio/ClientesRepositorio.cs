@@ -35,7 +35,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public bool EliminarCliente(int id_cliente)
+        public bool EliminarCliente(string id_cliente)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {
@@ -112,7 +112,7 @@ namespace DAP4.Biblioteca.SqlRepositorio
             }
         }
 
-        public Clientes ObtenerClientePorId(int id_cliente)
+        public Clientes ObtenerClientePorId(string id_cliente)
         {
             using (IDbConnection conexion = new SqlConnection(ConexionRepositorio.ObtenerCadenaConexion()))
             {

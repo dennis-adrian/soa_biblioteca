@@ -10,11 +10,11 @@ namespace DAP4.Biblioteca.ContratoRepositorio
 {
     public interface IClientesRepositorio
     {
-        Clientes ObtenerClientePorId(int id_cliente);
+        Clientes ObtenerClientePorId(string id_cliente);
         Clientes ObtenerClientePorApellido(string cliente_apellido);
         IEnumerable<Clientes> ListarClientes();
         Clientes InsertarCliente(Clientes cliente);
         Clientes ActualizarCliente(Clientes cliente);
-        bool EliminarCliente(int id_cliente);
+        bool EliminarCliente(string id_cliente);
     }
 }
